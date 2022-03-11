@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="newnewnew, Luminary">
+    <meta name="keywords" content="学习笔记高数下微分方程, Luminary">
     <meta name="description" content="nothing is impossible">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>newnewnew | Luminary</title>
+    <title>学习笔记高数下微分方程 | Luminary</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">newnewnew</h1>
+                    <h1 class="description center-align post-title">学习笔记高数下微分方程</h1>
                 </div>
             </div>
         </div>
@@ -464,7 +464,13 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>净化工程性质</p>
+                <p><img src="https://s3.bmp.ovh/imgs/2022/03/c11f79de4040d693.jpg"><br><img src="https://s3.bmp.ovh/imgs/2022/03/70b9cdc216cb8eb4.jpg"><br><img src="https://s3.bmp.ovh/imgs/2022/03/492debb539a35d53.png"><br>可分离变量的微分方程即y‘=f（x，y）直接分离积分</p>
+<p>齐次方程<br>    dy/dx=g(y/x)令u=y/x 得xdu+u=dy带入可得到关于u和x的函数分离积分即可最后再将u换回来<br>    可化为齐次的形如dy/dx=ax+by+c/ex+fy+g的用x=X+h,Y=y+K带到上式消去c和g再按照上面的方法做就行</p>
+<p>可降阶的高阶微分方程<br>    y**(n)=f(x)直接积分去求<br>    y’’=f(x,y’)<br>        令y’=P则y’‘=p’=dp/dx可化成p‘=f（x，p）然后分离去积分就行<br>    y’‘=f（y，y’）<br>        令y’=p,y’’=p&lt;dp/dy&gt;再带入之前得p&lt;dp/dy&gt;=f(y,p)再将y和p分开积分</p>
+<p>一阶线性微分方程形如dy/dx+P(x)y=Q(x)<br>    若Q（x)=0就直接分离求就行<br>    若Q（x）！=0直接带公式y=  e**-∫P（x）dx(C+∫Q（x）&lt;e<strong>∫P（x）dx&gt;  dx)<br>    伯努利方程dy/dx+p(x)y=Q(x)y</strong>(n)将y<strong>（n）除过去再放回dy里面用z=y</strong>(1-n)就变成了上面那个再直接带公式就行（除了难算点）</p>
+<p>二阶线性y’’+P(x)y’+Q（x）y=f(x)<br>    f(x)=0首先要看出来一个特解y1然后用刘威尔公式y2=y1∫e**-&lt;∫P（x）dx/y1**2&gt;dx可求出y2然后写通解y=c1y1+c2y2<br>    f(x)!=0对于非齐次的先将后面的f（x）看成0然后求出上面的结果化成y=c1(x)y1+c2(x)y2然后可得c’1(x)y1+c’2(x)y2=0,c’1(x)y1’+c’2(x)y2’=f(x)解出c1(x),c2(x)回带通解y=c1(x)y1+c2(x)y2</p>
+<p>常系数齐次线性微分方程y’’+py’+qy=0<br>    经张弘老师解释y=e<strong>rx然后求特征方程r</strong>2+pr+q=0看🔺与0关系分三种情况<br>        🔺&gt;0解出r1，r2通解为y=C1e<strong>r1x+C2e</strong>r2x<br>        🔺=0，y=(C1+C2x)e<strong>r1x<br>        🔺&lt;0 y=e**ax(C1cosbx+C2sinbx)其中a为-p/2 b为根号下4q-p方/2<br>    常系数非齐次线性微分方程y’’+py’+qy=f(x)<br>        1.先求出其对应齐次方程的通解Y即利用上面的步骤求出然后再去求非齐次方程的特解y1因较难所以只学了两种情况后面分类再写。3.非齐次方程的通解就为y=Y+y1<br>            若f(x)为P(x)&lt;e**ax&gt;其中p(x)为一个多项式则特解为y1=&lt;x**k&gt;R(x)e</strong>ax其中R(x)要看P(x)确定k的情况也分为三种0，1，2.若a为其特征方程(有两个不同的解)的一个解k=1，若特征方程仅一个解且为a,k=2.若a和解不一样则k=0.原因太长就只写结论了。到这就求出了特解的大部分至于R(x)要看P(x)来配出然后写结果就行<br>            看350页例3解</p>
+<p>注：y1和y2需是线性无关的即相除不能是常数</p>
 
                 
             </div>
@@ -705,9 +711,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="newnewnew">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="学习笔记高数下微分方程">
                         
-                        <span class="card-title">newnewnew</span>
+                        <span class="card-title">学习笔记高数下微分方程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
