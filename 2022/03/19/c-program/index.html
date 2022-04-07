@@ -465,11 +465,14 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>数据类型 运算符 表达式</p>
-<p>1.整型常量 #define price  30;<br>2.八进制常数以0 开头eg：015=13<br>3.十六进制整常数前缀以0x开头<br>4.整型变量 int k = 3;分为基本型int在内存中占4个字节，短整量short int 或 short所占字节和取值范围与基本型相同，长整型为log int 或log 4个字节，无符号型unsigned(没有正负)&lt;字节不同编译器不同&gt;   printf(“%d\n”,sizeof(int));<br>4.内存中二进制存储  一个字节BYTE = 8位bit<br>5.数值以补码表示 正数的补码与原码相同   负数的补码将该数的绝对值二进制形式按位数取反再加1.<br>6.实型数据  浮点型2.1e5 =2.1<em>105 在内存中存放，按指数存储  单精度 （float)双精度(doule)长双精度(long double)<br>7.字符型数据 字符常量（单引号括起来的1个字符’5’和5不同） 字符变量(char a,b;)  转义字符（\n 换行 \t横向跳到下一制表位置 \b退格 \r回车 \f走纸换页 \反斜杠’\’  \’单引号符 \”双引号符 \a鸣铃 ASC||码 65到90A-Z  97-122 a-z）<br>8.各类型数值型之间的混合运算  自动转换 强制转换（float）a; int(x+y);<br>9.运算符 除法’/‘舍掉了小数 %求余数<br>10.运算符的优先级<br>运算符的结合数<br>11. i++为先打印后加1，++i为加1后打印<br>a+=5等价于 a=a+5     x</em>=y+7 等价于 x=x*(y+7)</p>
+<p>1.整型常量 #define price  30;<br>2.八进制常数以0 开头eg：015=13<br>3.十六进制整常数前缀以0x开头<br>4.整型变量 int k = 3;分为基本型int在内存中占4个字节，短整量short int 或 short所占字节和取值范围与基本型相同，长整型为log int 或log 4个字节，无符号型unsigned(没有正负)&lt;字节不同编译器不同&gt;   printf(“%d\n”,sizeof(int));<br>4.内存中二进制存储  一个字节BYTE = 8位bit<br>5.数值以补码表示 正数的补码与原码相同   负数的补码将该数的绝对值二进制形式按位数取反再加1.<br>6.实型数据  浮点型2.1e5 =2.1<em>105 在内存中存放，按指数存储  单精度 （float)双精度(doule)长双精度(long double)<br>7.字符型数据 字符常量（单引号括起来的1个字符’5’和5不同） 字符变量(char a,b;)  转义字符（\n 换行 \t横向跳到下一制表位置 \b退格 \r回车 \f走纸换页 \反斜杠’\’  \’单引号符 \”双引号符 \a鸣铃 ASC||码 65到90A-Z  97-122 a-z,大写到小写，asc||码加）<br>8.各类型数值型之间的混合运算  自动转换 强制转换（float）a; int(x+y);<br>9.运算符 除法’/‘舍掉了小数 %求余数<br>10.运算符的优先级<br>运算符的结合数<br>11. i++为先打印后加1，++i为加1后打印<br>a+=5等价于 a=a+5     x</em>=y+7 等价于 x=x*(y+7)<br>12.其实在程序运行过程中，其值不能改变的量称为常量。如12、0、－3为整型常量，4.6、－1.23为实型常量， ‘a’、’d’为字符常量。<br>变量代表内存中具有特定属性的一个存储单元，它的值即为其存储的数据，程序运行期间，这些值是可以改变的。如：int a；即定义了一个变量a。<br>浮点型数据是C语言里数据的一种，即通常所说的实数。有两种形式：十进制小数形式和指数形式。<br>如：小数形式：0.123、123.0、0.0、－0.5等等；<br>指数形式：123e3（ 代表123乘以10的三次方）e可以是大写或小写，其后必须为整数；如 0.12e5、3.5E－7 等等；规范化的指数形式为：5.689e＋003 （=5689）、2.5e－004（=0.00025） e左边必须为≥1且＜10的数。<br>浮点型数据又分为单精度型(float)和双精度型(double)两种。<br>它们的区别在于占用储存空间不同：<br>单（float） ：占用比特数32，有效数位6-7，数值范围（－3.4e－38 ~ 3.4e＋38）<br>双（double）：占用比特数64，有效数位15-16，数值范围</p>
 <pre><code>      顺序结构
 </code></pre>
 <p>赋值语句 int a=5;不允许int a=b=c=5;输出输入以计算机为主体。<br>putchar函数（字符输出函数putchar(x);  输出x对应值）getchar入<img src="https://s3.bmp.ovh/imgs/2022/03/6f34d1cd15239b1b.png"><br>%d十进制整型输出 %ld十进制长整型 %c字符型输出<img src="https://s3.bmp.ovh/imgs/2022/03/748940298abddc68.png"><br>Scanf(格式输入函数) &amp;a(a的地址)<img src="https://s3.bmp.ovh/imgs/2022/03/af513d0a3db9928c.png"></p>
-<p>c语言不提供输入输出，由函数库提供 字符输入 getchar 字符输出 putchar格式输入 scanf 格式输出printf<br>分支循环程序<br>1.关系运算符 == 才是等于 = 是赋值 &lt; &gt; &lt;= != 优先级要低于算数运算符 a+b&lt;c-d会先算a+b,c-d再比较大小<br>2.逻辑运算符 &amp;&amp;与逻辑 ||或运算 ！非运算 优先级小于算数运算符<br>3.If语句构成分支结构 一.if 表达式，二. if(表达式） else（表达式）<br>4.if(表达式) {语句1; } else { 语句2;}<br>if(表达式1) { 语句1;}<br>else if(表达式2) {语句2;}<br>…<br>else if(表达式n){语句n;}<br>else{语句n+1;}<br>5.条件运算符 条件表达式 三目  表达式1？表达式2：表达式3  其求值规则为如果表达式1值为真，则表达式2的值为条件表达式的值，否则表达式2的值作为整个条件表达式的值 例max=(a&gt;b)?a:b;真的a赋值给max假的是b不能单独拆开使用 结合方向是自右向左在多个 1？2；3  4？5：6中<br>6.Switch 语句<img src="https://s3.bmp.ovh/imgs/2022/03/a12daa8c7736337f.png"><br><img src="https://s3.bmp.ovh/imgs/2022/03/d13610567d9ae4be.png">注意1：switch语句中表达式类型只能是整型或者字符型。<br>注意2：case里如果没有break，那么程序会一直向下执行。<br>总结：与if语句比，对于多条件判断时，switch的结构清晰，执行效率高，缺点是switch不可以判断区间。<br>         循环结构<br>1 .goto 语句 if语句构成循环<img src="https://s3.bmp.ovh/imgs/2022/03/a3ac95952239b329.png"><br><img src="https://s3.bmp.ovh/imgs/2022/03/40260c5a9670111c.png"><br>2.while语句 while(条件){内容}<br>3.do-while<img src="https://s3.bmp.ovh/imgs/2022/03/48cfd06744ab5589.png"><br><img src="https://s3.bmp.ovh/imgs/2022/03/f52769740e3f309a.png"><br>a ++<em>2=a</em>2+1<br>4.for for（表达式1（循环变量赋初值可却但分号不能少）；表达式2（判断条件）；表达式3(循环变量增量)）{语句}语句<br>先解表达式1.求解表达式2，若为真，则执行for语句中指定的内嵌语句，然后执行表达式3，若为0，则结束循环。<br>5.break,continue break语句只能用于循环语句和switch语句，</p>
+<p>c语言不提供输入输出，由函数库提供 字符输入 getchar 字符输出 putchar格式输入 scanf 格式输出printf<br>分支循环程序<br>1.关系运算符 == 才是等于 = 是赋值 &lt; &gt; &lt;= != 优先级要低于算数运算符 a+b&lt;c-d会先算a+b,c-d再比较大小<br>2.逻辑运算符 &amp;&amp;与逻辑 ||或运算 ！非运算 优先级小于算数运算符<br>3.If语句构成分支结构 一.if 表达式，二. if(表达式） else（表达式）<br>4.if(表达式) {语句1; } else { 语句2;}<br>if(表达式1) { 语句1;}<br>else if(表达式2) {语句2;}<br>…<br>else if(表达式n){语句n;}<br>else{语句n+1;}<br>5.条件运算符 条件表达式 三目  表达式1？表达式2：表达式3  其求值规则为如果表达式1值为真，则表达式2的值为条件表达式的值，否则表达式2的值作为整个条件表达式的值 例max=(a&gt;b)?a:b;真的a赋值给max假的是b不能单独拆开使用 结合方向是自右向左在多个 1？2；3  4？5：6中<br>6.Switch 语句<img src="https://s3.bmp.ovh/imgs/2022/03/a12daa8c7736337f.png"><br><img src="https://s3.bmp.ovh/imgs/2022/03/d13610567d9ae4be.png">注意1：switch语句中表达式类型只能是整型或者字符型。<br>注意2：case里如果没有break，那么程序会一直向下执行。<br>总结：与if语句比，对于多条件判断时，switch的结构清晰，执行效率高，缺点是switch不可以判断区间。<br>         循环结构<br>1 .goto 语句 if语句构成循环<img src="https://s3.bmp.ovh/imgs/2022/03/a3ac95952239b329.png"><br><img src="https://s3.bmp.ovh/imgs/2022/03/40260c5a9670111c.png"><br>2.while语句 while(条件){内容}<br>3.do-while<img src="https://s3.bmp.ovh/imgs/2022/03/48cfd06744ab5589.png"><br><img src="https://s3.bmp.ovh/imgs/2022/03/f52769740e3f309a.png"><br>a ++<em>2=a</em>2+1<br>4.for for（表达式1（循环变量赋初值可却但分号不能少）；表达式2（判断条件）；表达式3(循环变量增量)）{语句}语句<br>先解表达式1.求解表达式2，若为真，则执行for语句中指定的内嵌语句，然后执行表达式3，若为0，则结束循环。<br>5.break,continue break语句只能用于循环语句和switch语句，break 是跳出整个循环，continue跳出本次循环</p>
+<pre><code>              数组 
+</code></pre>
+<p>1.具有相同的数据类型，使用过程需要保留原始数据。<br>类型说明符 数组名 [数组的个数]  <img src="https://s3.bmp.ovh/imgs/2022/03/61360487bab6684c.png"><br>2.一维数组的初始化 int a[10]={0,1,…,9};  也可以部分赋值， 后面的不够的为0.int a[10]={0}即全为0 ，[在这之中的个数可以不写]<br>动态赋值  int a[10],i; for(i=1;i&lt;10;i++){scanf(“%d”,&amp;a[i])};<br>冒泡排序对10个数排序 将相邻的两个数比较，将小的调到前头<img src="https://s3.bmp.ovh/imgs/2022/03/30/0829bb9af975fc98.png"><br><img src="https://s3.bmp.ovh/imgs/2022/03/30/15d79d685973d81f.png"><br>3二维数组float a [3] [4]; 定义a为三行四列的数组<br><img src="https://s3.bmp.ovh/imgs/2022/03/30/2e70a61186e9ce7d.png"><br>3.二分法 在一批有序数据中查找数<img src="https://s3.bmp.ovh/imgs/2022/04/03/1749467d5fe7980b.png"><br>                函数</p>
 
                 
             </div>
@@ -744,13 +747,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/14/newnew/">
+                <a href="/2022/03/11/mydiffcult/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="c语言数据类型字符表达式">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="学习笔记高数下微分方程">
                         
-                        <span class="card-title">c语言数据类型字符表达式</span>
+                        <span class="card-title">学习笔记高数下微分方程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -761,7 +764,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-14
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-11
                             </span>
                         <span class="publish-author">
                             
